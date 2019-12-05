@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Dibujando en canvas</title>
+    <style media="screen">
+      body,h1
+      {
+        background-color: white;
+        color: black;
+        font: Helvetica;
+        text-align: center;
+      }
+      canvas
+      {
+      border: 4px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>El Lienzo</h1>
+    <p>
+      Cuantas lineas quieres? <br>
+      <input type="text" id="texto_lineas" />
+      <input type="button" value="a darle!" id="botoncito" />
+    </p>
+    <canvas id="dibujito" width="300" height="300"></canvas>
+    <script src="dibujo.js" charset="utf-8"></script>
+  </body>
+</html>
