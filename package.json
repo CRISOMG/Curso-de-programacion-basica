@@ -2,7 +2,7 @@
   "name": "probasica",
   "version": "1.0.0",
   "description": "Curso de programacion basica",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "test"
   },
