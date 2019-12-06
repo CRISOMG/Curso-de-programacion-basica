@@ -2,7 +2,7 @@
   "name": "probasica",
   "version": "1.0.0",
   "description": "Lo que parendi con el curso de programacion basica por Freddy Vega en platzi",
-  "main": "index.js",
+  "main": "./",
   "scripts": {
     "test": "test"
   },
