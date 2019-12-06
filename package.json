@@ -1,0 +1,19 @@
+{
+  "name": "probasica",
+  "version": "1.0.0",
+  "description": "Lo que parendi con el curso de programacion basica por Freddy Vega en platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CRISOMG/Curso-de-programacion-basica.git"
+  },
+  "author": "cristian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CRISOMG/Curso-de-programacion-basica/issues"
+  },
+  "homepage": "https://github.com/CRISOMG/Curso-de-programacion-basica#readme"
+}

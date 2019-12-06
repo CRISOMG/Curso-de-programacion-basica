@@ -1,22 +1,22 @@
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d");
 
-function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal,){
+function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, ) {
   lienzo.beginPath();
   lienzo.strokeStyle = color;
-  lienzo.moveTo(xinicial,yinicial);
-  lienzo.lineTo(xfinal,yfinal);
+  lienzo.moveTo(xinicial, yinicial);
+  lienzo.lineTo(xfinal, yfinal);
   lienzo.stroke();
   lienzo.closePath();
 }
 
 var texto = document.getElementById("texto_lineas");
 var boton = document.getElementById("botoncito");
-    boton.addEventListener("click", dibujoPorClick);
-    boton.addEventListener("keydown",dibujoPorClick)
+boton.addEventListener("click", dibujoPorClick);
+boton.addEventListener("keydown", dibujoPorClick)
 
 
-function dibujoPorClick(){
+function dibujoPorClick() {
   // var lineas = parseInt(texto.value);
   // var ancho = d.width;
   // var espacio = ancho / lineas;
@@ -37,13 +37,13 @@ function dibujoPorClick(){
   //   console.log("lineas " + l);
   // }
 }
-dibujarLinea("black",0,100,300,100)
-dibujarLinea("black",0,150,300,150)
-dibujarLinea("black",0,200,300,200)
-dibujarLinea("black",100,0,100,300)
-dibujarLinea("black",150,0,150,300)
-dibujarLinea("black",200,0,200,300)
+dibujarLinea("black", 0, 100, 300, 100)
+dibujarLinea("black", 0, 150, 300, 150)
+dibujarLinea("black", 0, 200, 300, 200)
+dibujarLinea("black", 100, 0, 100, 300)
+dibujarLinea("black", 150, 0, 150, 300)
+dibujarLinea("black", 200, 0, 200, 300)
 var r = 10;
-function dibujarCirculo(f){
-  dibujarLinea("black",150,150,f,f)
+function dibujarCirculo(f) {
+  dibujarLinea("black", 150, 150, f, f)
 }

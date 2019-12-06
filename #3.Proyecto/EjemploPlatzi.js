@@ -20,28 +20,22 @@ vaca.imagen = new Image();
 vaca.imagen.src = vaca.url;
 vaca.imagen.addEventListener("load", cargarVacas);
 
-function cargarFondo()
-{
+function cargarFondo() {
   fondo.cargaOK = true;
   dibujar();
 }
-function cargarVacas()
-{
+function cargarVacas() {
   vaca.cargaOK = true;
   dibujar();
 }
 
-function dibujar()
-{
-  if(fondo.cargaOK)
-  {
+function dibujar() {
+  if (fondo.cargaOK) {
     papel.drawImage(fondo.imagen, 0, 0);
   }
-  if(vaca.cargaOK)
-  {
+  if (vaca.cargaOK) {
     console.log(cantidad);
-    for(var v=0; v < cantidad; v++)
-    {
+    for (var v = 0; v < cantidad; v++) {
       var x = aleatorio(0, 7);
       var y = aleatorio(0, 10);
       var x = x * 60;
@@ -50,8 +44,7 @@ function dibujar()
     }
   }
 }
-function aleatorio(min, maxi)
-{
+function aleatorio(min, maxi) {
   var resultado;
   resultado = Math.floor(Math.random() * (maxi - min + 1)) + min;
   return resultado;
