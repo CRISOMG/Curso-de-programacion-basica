@@ -7,19 +7,16 @@ var gMarte = 3.7;
 var gJupiter = 24.7;
 
 
-if(planeta == 1)
-{
-   pesoFinal = peso * gMarte / gTierra
-   
+if (planeta == 1) {
+  pesoFinal = peso * gMarte / gTierra
+
   document.write(name + ",Tu peso en marte es <strong>" + pesoFinal + "</strong> kilos.");
 }
-else if(planeta == 2)
-{
+else if (planeta == 2) {
   pesoFinal = peso * gJupiter / gTierra;
-   pesoFinal = parseInt(pesoFinal);
+  pesoFinal = parseInt(pesoFinal);
   document.write(name + ",Tu peso en jupiter es <strong>" + pesoFinal + "</strong> kilos.");
 }
-else
-{
-    document.write("<red>Error</red>,selecciona 1 o 2 para tu planeta.")
+else {
+  document.write("<red>Error</red>,selecciona 1 o 2 para tu planeta.")
 }
