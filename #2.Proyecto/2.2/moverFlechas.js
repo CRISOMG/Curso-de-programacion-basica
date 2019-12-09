@@ -4,7 +4,7 @@ var papel = cuadrito.getContext("2d");
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal) {
   papel.beginPath();
   papel.strokeStyle = color;
-  papel.lineWidth = 9;
+  papel.lineWidth = 8;
   papel.moveTo(xinicial, yinicial);
   papel.lineTo(xfinal, yfinal);
   papel.stroke();
@@ -54,29 +54,16 @@ function dibujarTeclado(evento) {
 
 // Para dibujar con el mouse,OJO los valores de X y Y se modificaran.
 
-var click = 0;
-
-document.addEventListener("mousedown", clickDown);
-function clickDown() {
-  click = click + 1;
-  console.log(click);
-}
-
-document.addEventListener("mouseup", clickUp);
-function clickUp() {
-  click = click - 1;
-  console.log(click);
-}
-
 cuadrito.addEventListener("mousemove", clickMove);
 function clickMove(m) {
-  if (click == 1) {
-    x = m.x - 479;
-    y = m.y - 82;
-    dibujarLinea("black", x, y, x - 7, y - 7);
-    console.log(x, y);
+
+  if(m.path[0] && m.which){
+    x = m.layerX;
+    y = m.layerY;
+    espacio = 5.6;
+    x2 = x - espacio;
+    y2 = y - espacio;
+    dibujarLinea("black", x, y, x2, y2);
   }
+  
 }
-alert("puedes dibujar con click y con las flechas del teclado");
-alert("Si se bugea recarga la pagina con ctrl+r");
-alert("Y no te muevas tan rapido.");

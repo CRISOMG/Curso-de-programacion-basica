@@ -2,7 +2,7 @@ var canvas = document.getElementById("canvas");
 var papel = canvas.getContext("2d");
 // imagenes
 var fondo = {
-  url: "tile.png",
+  url: "./images/tile.png",
   loaded: false
 }
 
@@ -15,7 +15,7 @@ function cargarFondo() {
 }
 
 var vacas = {
-  url: "vaca.webp.png",
+  url: "./images/vaca.webp.png",
   loaded: false
 }
 vacas.imagen = new Image();
@@ -27,7 +27,7 @@ function cargarVacas() {
 }
 
 var cerdo = {
-  url: "cerdo.png",
+  url: "./images/cerdo.png",
   loaded: false
 }
 cerdo.imagen = new Image();
@@ -39,7 +39,7 @@ function cargarCerdo() {
 }
 
 var pollo = {
-  url: "pollo.png",
+  url: "./images/pollo.png",
   loaded: false
 }
 pollo.imagen = new Image();

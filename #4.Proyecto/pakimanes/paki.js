@@ -1,7 +1,7 @@
 var imagenes = [];
-imagenes["Cauchin"] = "vaca.webp.png";
-imagenes["Pokacho"] = "pollo.png";
-imagenes["Tocinauro"] = "cerdo.png";
+imagenes["Cauchin"] = "./images/vaca.webp.png";
+imagenes["Pokacho"] = "./images/pollo.png";
+imagenes["Tocinauro"] = "./images/cerdo.png";
 
 var coleccion = [];
 coleccion.push(new Pakiman("Cauchin", 100, 30));

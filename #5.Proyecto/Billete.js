@@ -1,3 +1,5 @@
+alert("funciona")
+
 class Billete {
   constructor(v, c) {
     this.valor = v;
@@ -6,23 +8,27 @@ class Billete {
 }
 
 var caja = []; {
-  caja.push(new Billete(50, 17));
+  caja.push(new Billete(50, 20));
   caja.push(new Billete(20, 5));
-  caja.push(new Billete(10, 5));
-  caja.push(new Billete(5, 6));
+  caja.push(new Billete(10, 10));
+  caja.push(new Billete(5, 4));
+  caja.push(new Billete(2, 10));
   caja.push(new Billete(1, 10));
 }
 var entregado = [];
 
-var dineroCaja = 0; {
-  for (var c of caja) {
-    dineroCaja += (c.valor * c.cantidad);
-  }
+var dineroCaja = 0;
+
+for (var c of caja) {
+  dineroCaja += (c.valor * c.cantidad);
 }
+
+
 var dinero = document.getElementById("dinero")
 var dar = parseInt(dinero.value);
 
 extraer.addEventListener("click", entregarDinero);
+
 function entregarDinero() {
   if (dineroCaja > 0 && dar < dineroCaja) {
     for (var b of caja) {
