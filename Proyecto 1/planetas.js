@@ -21,22 +21,17 @@
 // }
 
 // var usuario = prompt("cual es tu peso?")
-
-if(usuario > 0){
-  alert("es un numero")
-}else{
-  alert(`no es un numero ${usuario}`)
-}
+var n = 58;
 
 function pesoEnMarte(n){
   var peso = n * 3.7 / 9.8;
   return peso 
 }
 
-const actionM = document.querySelector("#actionM")
+const actionM = document.querySelector("#marte")
 actionM.addEventListener("click",writeM)
 
-const marte = document.querySelector("#respuestaM")
+const marte = document.querySelector("#marte")
 function writeM(){
   marte.innerHTML = parseInt(pesoEnMarte(usuario))
 }
@@ -48,10 +43,10 @@ function pesoEnJupiter(n){
   return peso 
 }
 
-const actionJ = document.querySelector("#actionJ")
+const actionJ = document.querySelector("#jupiter")
 actionM.addEventListener("click",writeJ)
 
-const jupiter = document.querySelector("#respuestaJ")
+const jupiter = document.querySelector("#jupiter")
 function writeJ(){
   jupiter.innerHTML = parseInt(pesoEnJupiter(usuario))
 }
