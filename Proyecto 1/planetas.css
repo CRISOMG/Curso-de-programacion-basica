@@ -1,56 +1,25 @@
 html{
-    background: url("./src/solarSistem.jpg");
+    background: url("./src/fondoEstelar.jpg.png");
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
-    height: 100%;
-    color: white;
-    font-size: 2em;
+    /* height: -webkit-fill-available; */
+    display: flex;
+    align-items: center;
+    
 }
 body{
-    height: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 0;
+}
+section{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
 }
-#mercurio{
-    border: 2px solid red;
-    padding: 25px;
-    margin-left: 13%;
-    margin-right: 3%
-}
-#venus{
-    border: 2px solid red;
-    padding: 25px;
-    margin-right: 5%;
-}
-#tierra{
-    border: 2px solid red;
-    padding: 25px;
-    margin-right: 5%;
-}
-#marte{
-    border: 2px solid red;
-    padding: 25px;
-    margin-right: 5%;
-}
-#jupiter{
-    border: 2px solid red;
-    padding: 30px;
-    margin-right: 10%;
-}  
-#saturno{
-    border: 2px solid red;
-    padding: 25px;
-    margin-right: 8%;
-}
-#urano{
-    border: 2px solid red;
-    padding: 25px;
-    margin-right: 4%;
-}
-#neptuno{
-    border: 2px solid red;
-    padding: 25px;
-    margin-right: 13%;
+img:hover{
+    border-color: blue;
+    border: dotted; 
 }
