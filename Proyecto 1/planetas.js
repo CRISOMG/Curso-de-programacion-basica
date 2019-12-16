@@ -1,4 +1,5 @@
 //var usuario = Number(prompt("¿Cual es tu peso?"))
+
 numberController()
 function numberController(){
   if(!usuario){
