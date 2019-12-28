@@ -7,33 +7,58 @@ html {
   display: flex;
   align-items: center;
 }
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-section {
+.solarSistem {
   display: flex;
   align-items: center;
+  position: relative;
 }
 div {
   margin: 0 1em;
 }
-img {
+.img {
   width: 100%;
 }
-img:hover {
+.img:hover {
   border-color: blue;
   border: outset;
 }
-.resultConteiner{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.border-more {
+  border-radius: 50%;
 }
-.result{
-    background-color: rgba(255, 247, 247, 0.5);
-    border-radius: 40px;
-    padding: 10px;
-    width: auto;
-    height: auto;
-
+.border-tierra {
+  border-radius: 45%;
+}
+.border-saturno {
+  border-top-left-radius: 70%;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 70%;
+  border-bottom-left-radius: 40%;
+}
+.border-urano {
+  border-top-left-radius: 60%;
+  border-top-right-radius: 18%;
+  border-bottom-right-radius: 65%;
+  border-bottom-left-radius: 18%;
+}
+/* .resultContainer {
+  margin: 0;
+  display: flex;
+  position: absolute;
+  bottom: 90px;
+  justify-content: center;
+  align-items: flex-start;
+} */
+.result {
+  position: absolute;
+  bottom: 90px;
+  margin: 0;
+  border: outset;
+  border-radius: 50px;
+  background-color: rgba(255, 247, 247, 0.5);
+  padding: 10px;
+  /* width: auto;
+  height: auto; */
 }
