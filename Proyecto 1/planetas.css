@@ -25,6 +25,9 @@ div {
   border-color: blue;
   border: outset;
 }
+div:hover .result{
+  display: block;
+}
 .border-more {
   border-radius: 50%;
 }
@@ -52,6 +55,7 @@ div {
   align-items: flex-start;
 } */
 .result {
+  display: none;
   position: absolute;
   bottom: 90px;
   margin: 0;
